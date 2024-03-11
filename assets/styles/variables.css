@@ -1,0 +1,13 @@
+:root{
+    --primary-bg:#8CC461;
+    --secondary-bg:#004429;
+    --primary-clr:#ffffff;
+    --secondary-clr:#252525;
+    --secondary-clr--light:#656565;
+    --danger-clr:#FF0000;
+    --list__square-clr:#FFD600;
+    --rock-clr:#0074B6;
+    --scissor-clr:#BD00FF;
+    --paper-clr:#FFA943;
+    --winner__pulse-clr:#2E9A25;
+}

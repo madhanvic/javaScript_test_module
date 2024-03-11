@@ -1,9 +1,61 @@
 @import url("./reset.css");
 @import url("./fonts.css");
 @import url("./base.css");
+@import url("./variables.css");
+@import url("./utilities.css");
+@import url("./components.css");
 
 
-h1{
-    color: aqua;
-    font-family: inherit;
+/**MAIN**/
+
+main{
+    background-color: var(--primary-bg);
+    width: 100%;
+    min-height: 100vh;
+    padding-top: clamp(5.4rem, 3.4vw, 6.2rem);
+}
+
+
+
+/**SCORE BOARD**/
+.score__board{
+  width: 100%;
+  border: 2px solid var(--primary-clr);
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(14rem, auto));
+  padding: clamp(1.4rem, 2vh, 2rem);
+  grid-column-gap: clamp(1.4rem, 2vh, 2rem);
+}
+
+.score__board .score__board--title{
+  font-weight: 500;
+  color: var(--primary-clr);
+ font-size: clamp(2.8rem, 3vw, 3.5rem);
+ letter-spacing: 0.4rem;
+}
+
+
+.score__board .score__board--card{
+  background-color: var(--primary-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+
+.score__board .score__board--card .score__board--player-title{
+  color: var(--secondary-clr--light);
+  font-size: clamp(1.4rem, 0.8vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  line-height: 2rem;
+}
+
+.score__board .score__board--card .score__board--score{
+  color: black;
+  font-size: clamp(5.4rem, 3.4vw, 6.2rem);
+  font-weight: 700;
 }

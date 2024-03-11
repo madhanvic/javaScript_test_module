@@ -1,0 +1,8 @@
+/**Wrapper**/
+
+.wrapper{
+    max-width:768px;
+    width: 80%;
+    margin-inline: auto;
+}
+
