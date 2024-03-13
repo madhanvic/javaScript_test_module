@@ -170,3 +170,129 @@ top: 0;
   width: 65%;
   object-fit: contain;
 }
+
+/**Result Announcement **/
+
+.result__anouncement{
+
+}
+
+.result__anouncement .picked__option{
+
+}
+
+.result__anouncement .picked__option p{
+
+}
+
+.result__anouncement .picked__option .picked__option--item {
+
+}
+
+.result__anouncement .picked__option .picked__option--item[option = "scissor"] {
+
+}
+
+.result__anouncement .picked__option .picked__option--item[option = "paper"] {
+
+}
+
+.result__anouncement .picked__option .picked__option--item[option = "rock"] {
+
+}
+
+.result__anouncement .picked__option .picked__option--item.winner {
+
+}
+
+.result__anouncement .result__msg-container{
+
+}
+
+.result__anouncement .result__msg-container .result{
+
+}
+
+.result__anouncement .result__msg-container .opponent{
+
+}
+
+
+
+
+/**Floating btn Container **/
+
+.btn_container{
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+
+/**Rules Popup **/
+.rules__popup{
+  position: fixed;
+  right: 4rem;
+  bottom: 10rem;
+  background-color: var(--secondary-bg);
+  outline: 5px solid var(--primary-clr);
+  width: 300px;
+  color: var(--primary-clr);
+  padding: clamp(1.6rem, 2.4vh, 2rem);
+}
+
+
+.rules__popup .rules__popup--title{
+  font-size: clamp(2.4rem, 1.5vw, 2.8rem);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.rules__popup .rule__popup--lists .rule__popup--list{
+ font-size: 1.4rem;
+ line-height: 2rem;
+ font-weight: 300;
+ padding-left: 2.6rem;
+ position: relative;
+}
+
+.rules__popup .rule__popup--lists .rule__popup--list::before{
+  content: "";
+  width: 0.8rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--list__square-clr);
+  display: inline-block;
+  margin-right: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.rules__popup .rule__popup--lists .rule__popup--list:not(:first-child){
+  margin-top: 1rem;
+}
+
+
+.rules__popup .rules__popup--close-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-family: dangrek;
+  color: var(--primary-clr);
+  background-color: var(--danger-clr);
+  outline: 4px solid var(--primary-clr);
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 4.8rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4em;
+}

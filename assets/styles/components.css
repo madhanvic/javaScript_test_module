@@ -6,3 +6,20 @@
     margin-inline: auto;
 }
 
+/**Button**/
+
+.btn_outline{
+    background-color: transparent;
+    border: 2px solid var(--primary-clr);
+    color: var(--primary-clr);
+    font-size: clamp(1.6rem, 1vw, 2rem);
+    font-weight: 500;
+    padding: 0.6rem clamp(1.2rem, 0.8vw, 1.4rem);
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+}
+
+
+.btn__playAgain{
+
+}
