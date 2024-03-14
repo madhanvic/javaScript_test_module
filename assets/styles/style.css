@@ -167,54 +167,95 @@ top: 0;
 }
 
 .rps_options .rpc_option button .inner_layer img{
-  width: 65%;
+  height: 55%;
   object-fit: contain;
 }
 
 /**Result Announcement **/
 
 .result__anouncement{
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .result__anouncement .picked__option{
-
+text-align: center;
 }
 
 .result__anouncement .picked__option p{
-
+ font-size: 1.7rem;
+ color: var(--primary-clr);
+ font-weight: 400;
+ letter-spacing: 0.3rem;
+ margin-bottom: 4rem;
 }
 
 .result__anouncement .picked__option .picked__option--item {
-
+  width: 180px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .result__anouncement .picked__option .picked__option--item[option = "scissor"] {
-
+  background-color: var(--scissor-clr);
 }
 
 .result__anouncement .picked__option .picked__option--item[option = "paper"] {
-
+  background-color: var(--paper-clr);
 }
 
 .result__anouncement .picked__option .picked__option--item[option = "rock"] {
-
+  background-color: var(--rock-clr);
 }
 
 .result__anouncement .picked__option .picked__option--item.winner {
+  animation-name: winnerPulse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+}
 
+
+
+.result__anouncement .picked__option .picked__option--item .picked__option--innerLayer{
+  background-color: var(--primary-clr);
+  width: 80%;
+  height: 80%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result__anouncement .picked__option .picked__option--item .picked__option--innerLayer img{
+  width: 55%;
+  object-fit: contain;
 }
 
 .result__anouncement .result__msg-container{
-
+ text-align: center;
+ color: var(--primary-clr);
 }
 
 .result__anouncement .result__msg-container .result{
-
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
 }
 
 .result__anouncement .result__msg-container .opponent{
-
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -295,4 +336,16 @@ top: 0;
   justify-content: center;
   align-items: center;
   font-size: 3.4em;
+}
+
+
+/**KeyFrames**/
+@keyframes winnerPulse {
+  0%{
+    box-shadow: 0px 0px 0px 10px rgba(46,154,37,1), 0px 0px 0px 10px rgba(46,154,37,0.6), 0px 0px 0px 10px rgba(46,154,37,0.3);
+  }
+
+  100%{
+    box-shadow: 0px 0px 0px 35px rgba(46,154,37,0), 0px 0px 0px 60px rgba(46,154,37,0), 0px 0px 0px 90px rgba(46,154,37,0);
+  }
 }

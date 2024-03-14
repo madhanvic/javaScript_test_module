@@ -21,5 +21,11 @@
 
 
 .btn__playAgain{
-
+  background-color: var(--primary-clr);
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: var(--secondary-clr--light);
+  font-weight: 600;
 }
