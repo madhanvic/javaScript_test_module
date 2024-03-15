@@ -1,0 +1,77 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./base.css");
+@import url("./variables.css");
+@import url("./utilities.css");
+@import url("./components.css");
+
+/**Hurray **/
+
+.hurray_container{
+    width: 500px;
+    height: 320px;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hurray_container .trophy{
+
+}
+
+.hurray_container  .star{
+    position: absolute;
+}
+
+.hurray_container  .star_1{
+    left: 20%;
+    top: 0;
+}
+
+.hurray_container  .star_2{
+    left: 12%;
+    top: 60px;
+}
+
+.hurray_container  .star_3{
+    left: 0;
+    top: 125px;
+}
+
+.hurray_container  .star_4{
+    left: 120px;
+    bottom: 15px;
+}
+
+.hurray_container  .star_5{
+    left: 40%;
+    top: 45px;
+}
+
+.hurray_container  .star_6{
+    left: 60%;
+    top: 0;
+}
+
+.hurray_container  .star_7{
+    right: 30px;
+    top: 100px;
+}
+
+.hurray_container  .star_8{
+    right: 0;
+    top: 160px;
+}
+
+
+/* .hurray_container  .star_7{
+    left: 0;
+    top: 50%;
+}
+
+.hurray_container .star_8{
+  right: 0;
+  bottom: 20px;
+} */

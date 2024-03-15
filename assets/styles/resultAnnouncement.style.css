@@ -1,0 +1,107 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./base.css");
+@import url("./variables.css");
+@import url("./utilities.css");
+@import url("./components.css");
+
+
+/**Result Announcement **/
+
+ .result__anouncement{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .result__anouncement .picked__option{
+  text-align: center;
+  }
+  
+  .result__anouncement .picked__option p{
+   font-size: clamp(1.4rem, 1vw, 2rem);
+   color: var(--primary-clr);
+   font-weight: 400;
+   letter-spacing: 0.3rem;
+   margin-bottom: clamp(3rem, 4vh, 4.4rem);
+  }
+  
+  .result__anouncement .picked__option .picked__option--item {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .result__anouncement .picked__option .picked__option--item[option = "scissor"] {
+    background-color: var(--scissor-clr);
+  }
+  
+  .result__anouncement .picked__option .picked__option--item[option = "paper"] {
+    background-color: var(--paper-clr);
+  }
+  
+  .result__anouncement .picked__option .picked__option--item[option = "rock"] {
+    background-color: var(--rock-clr);
+  }
+  
+  .result__anouncement .picked__option .picked__option--item.winner {
+    animation-name: winnerPulse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+  }
+  
+  
+  
+  .result__anouncement .picked__option .picked__option--item .picked__option--innerLayer{
+    background-color: var(--primary-clr);
+    width: 80%;
+    height: 80%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .result__anouncement .picked__option .picked__option--item .picked__option--innerLayer img{
+    width: 55%;
+    object-fit: contain;
+  }
+  
+  .result__anouncement .result__msg-container{
+   text-align: center;
+   color: var(--primary-clr);
+  }
+  
+  .result__anouncement .result__msg-container .result{
+    font-size: clamp(3.6rem, 2.2vw, 4.4rem);
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+  }
+  
+  .result__anouncement .result__msg-container .opponent{
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    margin-bottom: clamp(2rem, 2vh, 2.8rem);
+  }
+
+
+
+/**KeyFrames**/
+@keyframes winnerPulse {
+    0%{
+      box-shadow: 0px 0px 0px 10px rgba(46,154,37,1), 0px 0px 0px 10px rgba(46,154,37,0.6), 0px 0px 0px 10px rgba(46,154,37,0.3);
+    }
+  
+    100%{
+      box-shadow: 0px 0px 0px 35px rgba(46,154,37,0), 0px 0px 0px 60px rgba(46,154,37,0), 0px 0px 0px 90px rgba(46,154,37,0);
+    }
+}
