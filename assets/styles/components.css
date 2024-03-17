@@ -3,7 +3,8 @@ main{
   background-color: var(--primary-bg);
   width: 100%;
   min-height: 100vh;
-  padding-top: clamp(5.4rem, 3.4vw, 6.2rem);
+  padding-top: clamp(5.2rem, 6vh, 6.2rem);
+  padding-bottom: 4rem;
 }
 
 
@@ -66,12 +67,14 @@ main{
   position: fixed;
   bottom: 4rem;
   right: 4rem;
+  display: flex;
+  column-gap: 2rem;
 }
 
 /**Button**/
 
 .btn_outline{
-    background-color: transparent;
+    background-color: var(--primary-bg);
     border: 2px solid var(--primary-clr);
     color: var(--primary-clr);
     font-size: clamp(1.6rem, 1vw, 2rem);
@@ -97,8 +100,7 @@ main{
 
 .rules__popup{
   position: fixed;
-  right: 4rem;
-  bottom: 10rem;
+  z-index: 10;
   background-color: var(--secondary-bg);
   outline: 5px solid var(--primary-clr);
   width: 300px;

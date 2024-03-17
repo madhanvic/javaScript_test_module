@@ -85,7 +85,15 @@
     font-weight: 600;
     letter-spacing: 0.4rem;
   }
-  
+
+
+  .result__anouncement .result__msg-container .result.tie{
+    font-size: clamp(3.6rem, 2.2vw, 4.4rem);
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+    margin-bottom: clamp(2rem, 2vh, 2.8rem);
+  }
+ 
   .result__anouncement .result__msg-container .opponent{
     font-size: 1.3vw;
     font-weight: 600;

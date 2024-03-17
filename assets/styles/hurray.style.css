@@ -9,7 +9,7 @@
 
 .hurray_container{
     width: 500px;
-    padding-top: clamp(5.4rem, 3.4vw, 6.2rem);
+    padding-top: clamp(5.2rem, 6vh, 6.2rem);
     margin-inline: auto;
     text-align: center;
 }
@@ -41,9 +41,7 @@
     animation-direction: alternate;
 }
 
-.hurray_container .trophy_grp .trophy{
 
-}
 
 .hurray_container .trophy_grp  .star{
     /* display: none; */
