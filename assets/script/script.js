@@ -45,12 +45,10 @@
       this.#pcOption = this.options[Math.ceil(Math.random() * 3) - 1];
       sessionStorage.setItem("pcOption", this.#pcOption);
       this.winnerAnalyzer();
-      const aTag = document.createElement("a");
-      aTag.setAttribute("href", "resultAnnouncement.html");
-      aTag.click();
-      // window.location.replace(
-      //   `${window.location.origin}/resultAnnouncement.html`
-      // );
+
+      window.location.replace(
+        `https://madhanvic.github.io/javaScript_test_module/resultAnnouncement.html`
+      );
     }
     optionSetter() {
       const rpcBtns = document.querySelectorAll(".rpc_option button");
@@ -126,7 +124,9 @@
     nextHandler() {
       const nextBtn = document.querySelector(".btn_next");
       nextBtn.addEventListener("click", () => {
-        window.location.replace(`${window.location.origin}/hurray.html`);
+        window.location.replace(
+          `https://madhanvic.github.io/javaScript_test_module/hurray.html`
+        );
       });
     }
     hurrayPageSetter() {
@@ -138,10 +138,10 @@
         sessionStorage.removeItem("yourOption");
         sessionStorage.removeItem("pcOption");
         sessionStorage.removeItem("winner");
-        const aTag = document.createElement("a");
-        aTag.setAttribute("href", "");
-        aTag.click();
-        // window.location.replace(window.location.origin);
+
+        window.location.replace(
+          "https://madhanvic.github.io/javaScript_test_module/"
+        );
       });
     }
     winnerAnalyzer() {
