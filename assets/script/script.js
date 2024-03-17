@@ -38,7 +38,10 @@
     }
     optionHandler(e) {
       this.#userOption = e.currentTarget.getAttribute("value");
-      sessionStorage.setItem("yourOption", e.currentTarget.getAttribute("value"));
+      sessionStorage.setItem(
+        "yourOption",
+        e.currentTarget.getAttribute("value")
+      );
       this.#pcOption = this.options[Math.ceil(Math.random() * 3) - 1];
       sessionStorage.setItem("pcOption", this.#pcOption);
       this.winnerAnalyzer();
@@ -205,3 +208,5 @@
     score: score,
   });
 })();
+
+console.log(window.location);
