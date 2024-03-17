@@ -47,7 +47,7 @@
       this.winnerAnalyzer();
 
       window.location.replace(
-        `https://madhanvic.github.io/javaScript_test_module/resultAnnouncement.html`
+        `https://madhanvic.github.io/javaScript_test_module/resultAnnouncement`
       );
     }
     optionSetter() {
@@ -76,7 +76,7 @@
       }" option="${this.#userOption}">
       
           <div class="picked__option--innerLayer ">
-              <img src="./assets/images/${this.#userOption}.png" alt="${
+              <img src="assets/images/${this.#userOption}.png" alt="${
         this.#userOption
       }" width="45" height="65">
           </div>
@@ -102,7 +102,7 @@
         winner === "pc" ? "winner" : ""
       }" option="${this.#pcOption}">
           <div class="picked__option--innerLayer ">
-              <img src="./assets/images/${this.#pcOption}.png" alt="${
+              <img src="assets/images/${this.#pcOption}.png" alt="${
         this.#pcOption
       }" width="45" height="65">
           </div>
