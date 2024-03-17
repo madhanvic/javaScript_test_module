@@ -45,10 +45,12 @@
       this.#pcOption = this.options[Math.ceil(Math.random() * 3) - 1];
       sessionStorage.setItem("pcOption", this.#pcOption);
       this.winnerAnalyzer();
-
-      window.location.replace(
-        `${window.location.origin}/resultAnnouncement.html`
-      );
+      const aTag = document.createElement("a");
+      aTag.setAttribute("href", "resultAnnouncement.html");
+      aTag.click();
+      // window.location.replace(
+      //   `${window.location.origin}/resultAnnouncement.html`
+      // );
     }
     optionSetter() {
       const rpcBtns = document.querySelectorAll(".rpc_option button");
@@ -136,7 +138,10 @@
         sessionStorage.removeItem("yourOption");
         sessionStorage.removeItem("pcOption");
         sessionStorage.removeItem("winner");
-        window.location.replace(window.location.origin);
+        const aTag = document.createElement("a");
+        aTag.setAttribute("href", "");
+        aTag.click();
+        // window.location.replace(window.location.origin);
       });
     }
     winnerAnalyzer() {
